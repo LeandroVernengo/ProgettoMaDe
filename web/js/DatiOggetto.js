@@ -1,9 +1,10 @@
 ﻿var oggetto;
 var server = 'http://daas.marconirovereto.it/QROggetti/';
 function Load(oggetti, IdOggetto) {	
-	oggetto = oggetti[IdOggetto];
+    oggetto = oggetti[IdOggetto];
     document.getElementById("Title").innerText = oggetto["modello"]["ITA"];
-	document.getElementById("Description").innerText = oggetto["descrizione"]["ITA"];
+    console.log(oggetto["descrizione"]["ITA"]);
+    document.getElementById("Description").innerHTML = oggetto["descrizione"]["ITA"];
 	document.getElementById("Image").src = server + oggetto["id_oggetto"] + '/' + oggetto["immagini"][0];
 	
 	var alleg = "<h4>Allegati</h4>";
