@@ -33,7 +33,7 @@ function ProvaSale() {
 		s += "<div class='captn'>";
 		s += "<div class='captn-top'>";
 		s += "<p>Sala " + sale[i] + "</p></div>";
-		s += "<a href='?Sala=" + sale[i] + "'><div class='wthree-special-info'><p>" + sale[i] + "</p></div></a></div></div></div>";
+        s += "<a href='?Sala=" + sale[i] + "'><i class='fas fa-plus' style='color:white;font-size:40px'></i></a></div></div></div>";
 	}
 	s += "</div></div></div>";
 
@@ -168,8 +168,8 @@ function Oggetti(scelta, id) {
 			s += "<img class='img-responsive' src='" + MakeImgOggPath(ogg.id_oggetto, ogg.immagini[0]) + "' width='128px' height='128px' alt='ciao' />";
 			s += "<div class='captn'>";
 			s += "<div class='captn-top'>";
-			s += "<p>" + "Hey Bello" + "</p></div>";
-			s += "<a href='Oggetto.html?ID=" + i + "'><div class='wthree-special-info'><p>" + ogg.modello.ITA + "</p></div></a></div></div></div>";
+			s += "<p>" + ogg.modello.ITA + "</p></div>";
+            s += "<a href='Oggetto.html?ID=" + i + "'><i class='fas fa-plus' style='color:white;font-size:40px'></i></a></div></div></div>";
 			count += 1;
 		}
 	}
@@ -177,3 +177,4 @@ function Oggetti(scelta, id) {
 
 	document.getElementById("Elementi").innerHTML = s;
 }
+
