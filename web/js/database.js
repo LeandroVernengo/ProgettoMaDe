@@ -65,6 +65,7 @@ function MakeAllegatiURL(id_oggetto, all) {
     return;
 }
 
+
 function Oggetti(scelta, id) {
     var s = "";
     if (scelta == 0) {
@@ -78,6 +79,7 @@ function Oggetti(scelta, id) {
 
     for (var i in DB) {
         ogg = DB[i];
+        var titolo = "" + ogg.modello.ITA;
         if (count % 4 == 0 && count > 0) {
             s += "<div class='clearfix'></div>";
             s += "</div>";
@@ -92,8 +94,13 @@ function Oggetti(scelta, id) {
 			s += "<div class='special-img'>";
 			s += "<img class='img-responsive' src='" + MakeImgOggPath(ogg.id_oggetto, ogg.immagini[0]) + "' width='128px' height='128px' alt='ciao' />";
 			s += "<div class='captn'>";
-			s += "<div class='captn-top'>";
-			s += "<p>" + ogg.modello.ITA + "</p></div>";
+            s += "<div class='captn-top'>";
+            if (titolo.length < 50) {
+                s += "<p>" + titolo + "</p></div>";
+            }
+            else {
+                s += "<p>" + titolo.substring(0, 50) + "..." + "</p></div>";
+            }			
             s += "<a href='Oggetto.html?ID=" + i + "'><i class='fas fa-plus' style='color:white;font-size:40px'></i></a></div></div></div>";
 			count += 1;
 		}
