@@ -4,26 +4,17 @@
     website = "http://daas.marconirovereto.it/QROggetti/";
     
     s = "";
-    s += "<table border='1px solid black'>";
-
     for (var i = 0; i < DB.length; i++) {
         if (DB[i]["modello"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1 || DB[i]["descrizione"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1) {                
-            s += "<tr>";
-            s += "<td>";
+            s +="<p class='well'>"
             s += '<a href="Oggetto.html?ID=' + i + '">' + DB[i]["modello"]["ITA"] + '</a>';
-            s += "</td>";
-            s += "<td>";
-            s += '<p>' + DB[i]["descrizione"]["ITA"] + '</p>';
-            s += "</td>";               
-            
-            s += "</tr>";                
+            s += "</p>";                             
         }       
     }  
-    s += "</table>";
-
     document.getElementById("Results").innerHTML = s;
 }
-function MouseOnCerca() {
+
+function MouseOnCerca() {
     if (cerca.value == 'Cerca...') {
         cerca.value = '';
         cerca.style = 'color:#000';
@@ -48,4 +39,4 @@ function MouseClickCerca() {
 
 function CaricaValue() {
     cerca.value = "Cerca...";
-}
+}
