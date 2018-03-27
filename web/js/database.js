@@ -1,19 +1,15 @@
 
 var server = "http://daas.marconirovereto.it/QROggetti/";
-var sale = [], collezioni = [];
+var sale = [];
 
 
 function ProvaSale() {
 	var s = "<div class='container'><div class='agileinfo-heading'><h3>Sale</h3></div><div class='special-top-grids'>";
-	var c = "<div class='container'><div class='agileinfo-heading'><h3>Collezioni</h3></div><div class='special-top-grids'>";
-	var sala = -1, collezione = -1;
+	var sala = -1;
 	
 	for (var i in DB) {
 		if (sale.indexOf(DB[i].id_sala) == -1) {
 			sale.push(DB[i].id_sala);
-		}
-		if (collezioni.indexOf(DB[i].id_collezione) == -1) {
-			collezioni.push(DB[i].id_collezione);
 		}
 	}
 
@@ -35,29 +31,9 @@ function ProvaSale() {
 		s += "<p>Sala " + sale[i] + "</p></div>";
 		s += "<a href='?Sala=" + sale[i] + "'><div class='wthree-special-info'><p>" + sale[i] + "</p></div></a></div></div></div>";
 	}
-	s += "</div></div></div>";
+	s += "</div></div></div>";	
 
-	for (var i in collezioni) {
-
-		if (i % 4 == 0 && i > 0) {
-			c += "<div class='clearfix'></div>";
-			c += "</div>";
-		}
-		if (i % 4 == 0) {
-			c += "<div class='w3-agile-special'>";
-		}
-
-		c += "<div class='col-md-3 special-grids'>";
-		c += "<div class='special-img'>";
-		c += "<img class='img-responsive' src='CollezioneX.jpg' width='128px' height='128px' alt='ciao' />";
-		c += "<div class='captn'>";
-		c += "<div class='captn-top'>";
-		c += "<p>Collezione " + collezioni[i] + "</p></div>";
-		c += "<a href='?Collezione=" + collezioni[i] + "'><div class='wthree-special-info'><p>" + collezioni[i] + "</p></div></a></div></div></div>";
-	}
-	c += "</div></div></div>";
-
-	document.getElementById("Elementi").innerHTML = s + c;
+	document.getElementById("Elementi").innerHTML = s;
 }
 
 
