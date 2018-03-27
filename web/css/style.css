@@ -4,6 +4,18 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+.livello {
+    z-index: 10;
+    position: absolute;
+    width: 250px !important;
+    width /**/: 200px;
+    height: 437px !important;
+    height /**/: 200px;
+    padding: 1px;
+    overflow: auto
+}
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -28,6 +40,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    
 }
 .w3layouts-header-top{
 	padding: 1em 2em;
@@ -106,6 +119,7 @@ body{
 .head {
     padding: 1em 4em;
     background: hsla(0, 0%, 0%, 0.45);
+    padding-right:inherit;
 }
 .logo h1{
     margin: .2em 0 0 0;
@@ -135,7 +149,7 @@ body{
 }
 .navbar-nav {
     float: right;
-	margin-top: 1.45em;
+	margin-top: 40px;
 }
 .header-left{
 	float:right;
@@ -489,7 +503,7 @@ ul.dropdown-menu li a:hover {
 /*-- //welcome --*/
 /*-- special --*/
 .special {
-    background: #ebfdfb;
+    background: #5555552b;
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2), 0 0px 0px rgba(0, 0, 0, 0);
 }
 .special-grids .special-img {
@@ -577,7 +591,7 @@ img.img-responsive {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 30% 30%;
 }
 .wthree-history-info h4{
 	color: #FFFFFF;
@@ -1340,6 +1354,27 @@ ol {
 h2.typoh2{
     margin: 0 0 10px;
 }
+
+.RicercaDiv {
+    display: block;
+    width: 250px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-top:13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
 @media (max-width:768px){
 .grid_5 {
 	padding: 0 0 1em;
@@ -1368,7 +1403,7 @@ h2.typoh2{
 	}
 	.well {
 		font-size: 14px;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	h2.typoh2 {
 		font-size: 1.5em;

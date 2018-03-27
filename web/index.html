@@ -23,8 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <!-- font -->
-<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Great+Vibes&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;subset=latin-ext" rel="stylesheet">
 <!-- //font -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span class="icon-bar"></span>
 							  </button>
 							<div class="navbar-brand logo ">
-						    <h1><a href="index.html">Food <span>Club</span></a></h1>
+                                <a href="index.html"><img src="images/logo_museo_b.png" /></a>
 						</div>
 
 							</div>
@@ -115,13 +115,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  </ul>
 							</div><!-- /.navbar-collapse -->
 						</div>
-			
 					<div class="header-left">
-						<ul>
-							<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">@example.com</a></li>
-							<li><i class="fa fa-fax" aria-hidden="true"></i> +1234 567 892</li>
-						</ul>
-					</div>
+                          <input id="cerca" value="Cerca..." onmouseenter="MouseOnCerca()" onmouseleave="MouseLeavesCerca();" onkeydown="Risultati()" onclick="MouseClickCerca" style="color: rgba(0, 0, 0, 0.5);" class="RicercaDiv">
+                          <div id="Results" class="livello">
+                            </div>
+                    </div>
 					<div class="clearfix"></div>	
 				</div>
 			</div>
@@ -132,10 +130,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="rslides callbacks callbacks1" id="slider4">
 								<li>
 									<div class="agileits-banner-info">
-										<h3>Lorem ipsum <span>dolor sit amet</span></h3>
-										<div class="w3-button">
+										<!--<h3>Lorem ipsum <span>dolor sit amet</span></h3>-->
+										<!--<div class="w3-button">
 											<a href="single.html">More</a>
-										</div>
+										</div>-->
 									</div>
 								</li>
 							</ul>
@@ -173,13 +171,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- welcome -->
 	<div class="welcome">
 		<div class="container">
-			<div class="agileinfo-heading">
-				<h3>Welcome</h3>
-			</div>
-			<input id="cerca" value="Cerca..." onmouseenter="MouseOnCerca()" onmouseleave="MouseLeavesCerca();" onkeydown="Risultati()" onclick="MouseClickCerca" style="color: rgba(0, 0, 0, 0.5);" type="text">
-			<div id="Results">
-
-            </div>
             <div class="agileits-welcome-grids">
 				<div class="col-md-5 agileits-welcome-left">
 					<img src="images/2.jpg" alt="" />
@@ -197,80 +188,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //welcome -->
 	<!-- special -->
 	<div class="special" id="Elementi">
-
-	</div>
-	<!-- //special -->
-	<!-- history -->
-	<div class="history jarallax">
-		<div class="history-dot">
-			<div class="container">
-				<div class="agileinfo-history-grids">
-					<div class="slider">
-						<div class="callbacks_container">
-							<ul class="rslides" id="slider3">
-								<li>
-									<div class="wthree-history-info">
-										<h4>Lorem ipsum dolor sit amet, consectetur</h4>
-										<p>Mauris mollis, libero id ornare condimentum, erat mi iaculis libero, bibendum dictum leo tortor a magna. Aenean porta non nunc in semper. Fusce eget tempus metus, sit amet posuere lectus. Morbi cursus ante a felis ultrices scelerisque. Nullam cursus odio est, in pellentesque neque elementum nec. Pellentesque a egestas erat.</p>
-										<a href="about.html">Read More</a>
-									</div>
-								</li>
-								<li>
-									<div class="wthree-history-info">
-										<h4>Vivamus placerat velit placerat elementum</h4>
-										<p>Nullam tristique faucibus pharetra. Ut ultricies, dui a tincidunt placerat, urna augue pellentesque leo, et posuere velit neque quis justo. Vivamus vel nulla vel tellus pretium maximus. Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-										<a href="about.html">Read More</a>
-									</div>
-								</li>
-								<li>
-									<div class="wthree-history-info">
-										<h4>Donec pellentesque felis sit amet vehicula</h4>
-										<p>Donec viverra enim nunc, sit amet ultricies dolor placerat vestibulum. Donec id dapibus dolor. Praesent elementum ipsum fringilla ullamcorper facilisis. Morbi blandit tortor molestie ex dignissim, vitae blandit metus ullamcorper. Praesent eleifend risus quam, et aliquet eros tristique a. Duis rhoncus auctor urna, id tristique quam gravida in. </p>
-										<a href="about.html">Read More</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									  // Slideshow 4
-									  $("#slider3").responsiveSlides({
-										auto: true,
-										pager:false,
-										nav:false,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-										  $('.events').append("<li>before event fired.</li>");
-										},
-										after: function () {
-										  $('.events').append("<li>after event fired.</li>");
-										}
-									  });
-								
-									});
-								 </script>
-								<!--banner Slider starts Here-->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //history -->
-	<!-- subscribe -->
-	<div class="wthree-subscribe">
-		<div class="container">
-			<div class="agileinfo-heading">
-				<h3>Newsletter</h3>
-			</div>
-			<div class="w3-agileits-subscribe-form">
-				<form action="#" method="post">
-					<input type="text" placeholder="Subscribe" name="Subscribe" required="">
-					<button class="btn1">Subscribe</button>
-				</form>
-			</div>
-		</div>
 	</div>
 	<!-- //subscribe -->
 	<!-- footer -->
@@ -279,65 +196,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid">
 					<div class="footer-grid-heading">
-						<h3><a href="index.html">Food <span>Club</span></a></h3>
-					</div>
-					<div class="agile-footer-info">
-						<p>Maecenas pharetra scelerisque sem quis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-					</div>
-					<div class="social">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-vk"></i></a></li>
-						</ul>
+                        <a href="http://www.museodellaguerra.it/"><img src="images/logo_museo_b.png" /></a>
 					</div>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<div class="footer-grid-heading">
-						<h4>Address</h4>
-					</div>
-					<div class="footer-grid-info">
-						<p>Eiusmod Tempor inc
-							<span>St Dolore Place,Kingsport 56777.</span>
-						</p>
-						<p class="phone">Phone : +1 123 456 789
-							<span>Email : <a href="mailto:example@email.com">mail@example.com</a></span>
-							<span>FAX : 123 456 7890</span>
-						</p>
+                        <a href="https://www.marconirovereto.it/"><img src="images//logoITTMarconi.png" /></a>
 					</div>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<div class="footer-grid-heading">
-						<h4>Navigation</h4>
-					</div>
-					<div class="footer-grid-info">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="icons.html">Icons</a></li>
-							<li><a href="codes.html">Short Codes</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<div class="footer-grid-heading">
-						<h4>Twitter Posts</h4>
-					</div>
-					<div class="agile-footer-grid">
-						<ul class="w3agile_footer_grid_list">
-							<li>Ut aut reiciendis voluptatibus maiores <a href="#">http://example.com</a> alias, ut aut reiciendis.
-								<span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span></li>
-							<li>Itaque earum rerum hic tenetur a sapiente delectus <a href="#">http://example.com</a><span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span></li>
-						</ul>
+                        <a href="http://istitutodellearti.tn.it/index.php/info-istituto/liceo-depero-rovereto"><img src="images/depero.png" /></a>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
-			<div class="agileits-w3layouts-copyright">
-				<p>© 2017 Food Club . All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a> </p>
 			</div>
 		</div>
 	</div>
