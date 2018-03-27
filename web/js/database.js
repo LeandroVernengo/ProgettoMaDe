@@ -168,8 +168,8 @@ function Oggetti(scelta, id) {
 			s += "<img class='img-responsive' src='" + MakeImgOggPath(ogg.id_oggetto, ogg.immagini[0]) + "' width='128px' height='128px' alt='ciao' />";
 			s += "<div class='captn'>";
 			s += "<div class='captn-top'>";
-			s += "<p>" + "Hey Bello" + "</p></div>";
-			s += "<a href='Oggetto.html?ID=" + i + "'><div class='wthree-special-info'><p>" + ogg.modello.ITA + "</p></div></a></div></div></div>";
+            s += "<p>" + ogg.modello.ITA + "</p></div>";
+			s += "<a href='Oggetto.html?ID=" + i + "'><div class='wthree-special-info'><p>" + "v" + "</p></div></a></div></div></div>";
 			count += 1;
 		}
 	}
