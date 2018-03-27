@@ -98,11 +98,10 @@ function Oggetti(scelta, id) {
         s = "<div class='container'><div class='agileinfo-heading'><h3>Collezione " + id + "</h3></div><div class='special-top-grids'>";
     }
 
+    var count = 0;
+
     for (var i in DB) {
         ogg = DB[i];
-        var count = 0;
-        console.log(i);
-        console.log(count);
         if (count % 4 == 0 && count > 0) {
             s += "<div class='clearfix'></div>";
             s += "</div>";
@@ -121,9 +120,7 @@ function Oggetti(scelta, id) {
             s += "<p>" + "Hey Bello" + "</p></div>";
             s += "<a href='Oggetto.html?ID=" + i + "'><div class='wthree-special-info'><p>" + ogg.modello.ITA + "</p></div></a></div></div></div>";
             count += 1;
-            console.log("**" + count);
         }
-        console.log();
     }
     s += "</div></div></div></div>";
 
