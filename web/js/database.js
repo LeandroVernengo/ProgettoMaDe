@@ -65,6 +65,7 @@ function MakeAllegatiURL(id_oggetto, all) {
     return;
 }
 
+
 function Oggetti(scelta, id) {
     var s = "";
     if (scelta == 0) {
