@@ -28,6 +28,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    
 }
 .w3layouts-header-top{
 	padding: 1em 2em;
@@ -135,7 +136,7 @@ body{
 }
 .navbar-nav {
     float: right;
-	margin-top: 1.45em;
+	margin-top: 40px;
 }
 .header-left{
 	float:right;
@@ -452,7 +453,7 @@ ul.dropdown-menu li a:hover {
     font-size: 4em;
     text-align: center;
     margin: 0;
-    font-family: 'Great Vibes', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
 }
 .agileits-welcome-left img{
@@ -577,7 +578,7 @@ img.img-responsive {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 30% 30%;
 }
 .wthree-history-info h4{
 	color: #FFFFFF;
