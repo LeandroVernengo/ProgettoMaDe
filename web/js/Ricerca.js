@@ -6,7 +6,7 @@
     s = "";
     for (var i = 0; i < DB.length; i++) {
         if (DB[i]["modello"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1 || DB[i]["descrizione"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1) {                
-            s +="<p class='well'>"
+            s +="<p class='well' style='margin-bottom:0px'>"
             s += '<a href="Oggetto.html?ID=' + i + '">' + DB[i]["modello"]["ITA"] + '</a>';
             s += "</p>";                             
         }       

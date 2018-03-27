@@ -4,6 +4,18 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+.livello {
+    z-index: 10;
+    position: absolute;
+    width: 200px !important;
+    width /**/: 200px;
+    height: 190px !important;
+    height /**/: 200px;
+    padding: 4px;
+    overflow: auto
+}
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -106,6 +118,7 @@ body{
 .head {
     padding: 1em 4em;
     background: hsla(0, 0%, 0%, 0.45);
+    padding-right:inherit;
 }
 .logo h1{
     margin: .2em 0 0 0;
@@ -1367,7 +1380,7 @@ h2.typoh2{
 	}
 	.well {
 		font-size: 14px;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	h2.typoh2 {
 		font-size: 1.5em;
