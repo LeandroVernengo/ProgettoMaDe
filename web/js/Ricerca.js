@@ -1,13 +1,11 @@
 ﻿function Risultati() {
-
     var testo = cerca.value;    
     website = "http://daas.marconirovereto.it/QROggetti/";
-    
     s = "";
     for (var i = 0; i < DB.length; i++) {
-        if (DB[i]["modello"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1 || DB[i]["descrizione"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1) {                
+        if (DB[i]["modello"]["ITA"].toUpperCase().indexOf(testo.toUpperCase()) > -1 && testo != "") {                
             s +="<p class='well' style='margin-bottom:0px'>"
-            s += '<a href="Oggetto.html?ID=' + i + '">' + DB[i]["modello"]["ITA"] + '</a>';
+            s += '<a href="Oggetto.html?ID=' + i + '" style="color:black">' + DB[i]["modello"]["ITA"] + '</a>';
             s += "</p>";                             
         }       
     }  
