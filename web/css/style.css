@@ -19,8 +19,8 @@ body{
 	background:#FFFFFF;
 }
 /*-- banner --*/
-.banner{
-	background: url(../images/1.jpg) no-repeat 0px 0px;
+.banner {
+    background: url(http://daas.marconirovereto.it/QROggetti/Varie/panoramica_ingresso2.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .jarallax {
@@ -96,7 +96,6 @@ body{
 	color: #45668e;
 }
 .agileinfo-dot {
-	background: url(../images/dott.png)repeat 0px 0px;
     background-size: 3px;
     -webkit-background-size: 3px;
     -moz-background-size: 3px;
