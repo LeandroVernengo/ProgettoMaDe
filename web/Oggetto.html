@@ -67,28 +67,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner jarallax">
 		<!-- agileinfo-dot -->
 		<div class="agileinfo-dot">
-			<!--<div class="w3layouts-header-top">
-				<div class="w3-header-top-grids">
-					<div class="w3-header-top-left">
-						<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +1 234 567 8901</p>
-					</div>
-					<div class="w3-header-top-right">
-						<div class="agileinfo-social-grids">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								<li><a href="#"><i class="fa fa-vk"></i></a></li>
-							</ul>
-						</div>
-						<div class="w3-header-top-right-text">
-							<p><i class="fa fa-home" aria-hidden="true"></i> 1st Street , mexico city</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>-->
-			<!--</div>-->
 			<div class="head">
 				<div class="head-nav-grids">
 					<div class="navbar-top">
@@ -100,40 +78,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							  </button>
-								 <div class="navbar-brand logo ">
-									<a href="index.html"><img src="images/logo_museo_b.png" /></a>
-								</div>
+							<div class="navbar-brand logo ">
+                                <a href="index.html"><img src="images/logo_museo_b.png" /></a>
+						</div>
 
 							</div>
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							 <ul class="nav navbar-nav link-effect-4">
-							<li><a href="index.html" data-hover="Home">Home</a> </li>
-								<li class="active"><a href="about.html" data-hover="About">About </a> </li>
-								<li><a href="gallery.html"  data-hover="Gallery">Gallery</a></li>
-								<li class="dropdown">
-									<a href="codes.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown">Pages <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="icons.html">Icons</a></li>
-										<li><a href="codes.html">Short Codes</a></li>
-									</ul>
-							  </li>
+							<li class="active"><a href="index.html" data-hover="Home">Home</a> </li>
 								<li><a href="contact.html" data-hover="Contact">Contact</a></li>
 							  </ul>
 							</div><!-- /.navbar-collapse -->
 						</div>
-			
 					<div class="header-left">
-						<ul>
-							<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">@example.com</a></li>
-							<li><i class="fa fa-fax" aria-hidden="true"></i> +1234 567 892</li>
-						</ul>
-					</div>
+                          <input id="cerca" value="Cerca..." onmouseenter="MouseOnCerca()" onmouseleave="MouseLeavesCerca();" onkeydown="Risultati()" onclick="MouseClickCerca" style="color: rgba(0, 0, 0, 0.5);" class="RicercaDiv">
+                          <div id="Results" class="livello">
+                            </div>
+                    </div>
 					<div class="clearfix"></div>	
 				</div>
 			</div>
-			
+			<div class="w3layouts-banner-slider">
+				<div class="w3layouts-banner-top-slider">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="agileits-banner-info">
+										<!--<h3>Lorem ipsum <span>dolor sit amet</span></h3>-->
+										<!--<div class="w3-button">
+											<a href="single.html">More</a>
+										</div>-->
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+						<script src="js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 4
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager:true,
+								nav:true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						 </script>
+						<!--banner Slider starts Here-->
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- //agileinfo-dot -->
 	</div>
@@ -181,73 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- team -->
-	<div class="team-dot">
-		<div class="jarallax team">
-			<div class="container">
-				<div class="agileinfo-heading wthree-team-heading"><h3>Our Team</h3></div> 
-				<div class="agileits-team-grids">
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info">
-							<img src="images/t1.jpg" alt="" />
-							<div class="team-caption"> 
-								<h4>Justo congue</h4>
-								<p>Fusce laoreet</p>
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info">
-							<img src="images/t2.jpg" alt="" />
-							<div class="team-caption"> 
-								<h4>Justo congue</h4>
-								<p>Fusce laoreet</p>
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info">
-							<img src="images/t3.jpg" alt="" />
-							<div class="team-caption"> 
-								<h4>Justo congue</h4>
-								<p>Fusce laoreet</p>
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info">
-							<img src="images/t4.jpg" alt="" />
-							<div class="team-caption"> 
-								<h4>Justo congue</h4>
-								<p>Fusce laoreet</p>
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //team -->	
+	
 	<!-- //about -->
 	<!-- footer -->
     <div class="w3-agile-footer">
