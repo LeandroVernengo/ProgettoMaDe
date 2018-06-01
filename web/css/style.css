@@ -185,10 +185,11 @@ div#bs-example-navbar-collapse-1 {
     padding: 0;
 }
 ul.nav.navbar-nav li a {
-	font-size: 1em;
+	font-size: 2em;
     color: #FFFFFF;
     margin: 0 15px;
-    padding: 0px 0;
+	padding: 0px 0;
+	font-weight: 700;
 }
 ul.nav.navbar-nav li a:hover{
     color: #e64e1f;
@@ -463,11 +464,12 @@ ul.dropdown-menu li a:hover {
 }
 .agileinfo-heading h3{
 	color: #FF5722;
-    font-size: 4em;
+    font-size: 6em;
     text-align: center;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	font-weight: 500;
 }
 .agileits-welcome-left img{
 	width:100%;

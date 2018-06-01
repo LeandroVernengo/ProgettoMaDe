@@ -25,7 +25,7 @@ function ProvaSale() {
 
 		s += "<div class='col-md-3 special-grids'>";
 		s += "<div class='special-img'>";
-		s += "<img class='img-responsive' src='SalaX.jpg' width='128px' height='128px' alt='ciao' />";
+		s += "<img class='img-responsive' src='./images/Sala" + sale[i] + ".jpg' width='128px' height='128px' alt='ciao' />";
 		s += "<div class='captn'>";
 		s += "<div class='captn-top'>";
 		s += "<p>Sala " + sale[i] + "</p></div>";
