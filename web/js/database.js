@@ -28,8 +28,8 @@ function ProvaSale() {
 		s += "<img class='img-responsive' src='./images/Sala" + sale[i] + ".jpg' width='128px' height='128px' alt='ciao' />";
 		s += "<div class='captn'>";
 		s += "<div class='captn-top'>";
-		s += "<p>Sala " + sale[i] + "</p></div>";
-        s += "<a href='?Sala=" + sale[i] + "'><i class='fas fa-plus' style='color:white;font-size:40px'></i></a></div></div></div>";
+		s += "</div>";
+        s += "<a href='?Sala=" + sale[i] + "'><i class='fas fa-plus' style='margin-top:25px;color:white;font-size:40px'></i></a></div></div></div>";
 	}
 	s += "</div></div></div>";	
 
