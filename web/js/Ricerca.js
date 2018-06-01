@@ -38,3 +38,8 @@ function MouseClickCerca() {
 function CaricaValue() {
     cerca.value = "Cerca...";
 }
+
+function ChangeColor(){
+    cerca.style = 'color:#ffffff';
+    
+}
