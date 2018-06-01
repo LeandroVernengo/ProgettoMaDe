@@ -5,6 +5,13 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+@keyframes prova {
+	from {background-color: #ffffff96;}
+	to {background-color: #ffffff;}
+}
+
+
+
 .livello {
     z-index: 10;
     position: absolute;
@@ -1380,6 +1387,8 @@ h2.typoh2{
 }
 
 .RicercaDiv:hover{
+	animation-name: prova;
+	animation-duration: 1s;
 	background-color: #ffffff;
 }
 
