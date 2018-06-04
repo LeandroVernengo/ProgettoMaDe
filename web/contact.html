@@ -28,6 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/Ricerca.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -71,11 +72,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  </ul>
 							</div><!-- /.navbar-collapse -->
 						</div>
-					<div class="header-left">
-                          <input id="cerca" value="Cerca..." onmouseenter="MouseOnCerca()" onmouseleave="MouseLeavesCerca();" onkeydown="Risultati()" onclick="MouseClickCerca" style="color: rgba(0, 0, 0, 0.5);" class="RicercaDiv">
-                          <div id="Results" class="livello">
-                            </div>
-                    </div>
+						<div class="header-left">
+								<input id="cerca" value="Cerca..." onmouseenter="MouseOnCerca()" onmouseleave="MouseLeavesCerca();" onkeydown="Risultati()" onclick="MouseClickCerca();" style="color: rgba(0, 0, 0, 0.5);" class="RicercaDiv">
+								<div id="Results" class="livello">
+								  </div>
+						  </div>
 					<div class="clearfix"></div>	
 				</div>
 			</div>
@@ -128,8 +129,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact-content">
 		<div class="container">	
 			<div class="map">
+				<div class="agileinfo-heading"><h3>Location</h3></div>
 					<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Museo Storico Italiano&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>	
 			</div>
+			</br>
 			<div class="contact-form">
 				<h3>Contact form</h3>
 				<form action="#" method="post">
